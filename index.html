@@ -127,4 +127,46 @@ footer{background:#19152d;color:#fff;text-align:center;padding:25px}
 
 <footer>© 2026 Nitesh Stylish Dresses • All Rights Reserved</footer>
 
-<https://wa.me/919006073254?text=
+  <div class="banner">
+  <h2>New Look. New You. 💖</h2>
+  <p>Fresh styles • Colourful fashion • Everyday confidence</p>
+  <a class="btn" href="#contact">Contact Us</a>
+</div>
+
+<section class="contact" id="contact">
+  <h2 class="title">Get In Touch</h2>
+  <p>📞 Call: +91 9006073254</p>
+  <p>📧 Email: kumar4743914@gmail.com</p>
+  <a class="wa" href="https://wa.me/919006073254" target="_blank">💬 WhatsApp Us</a>
+</section>
+
+<footer>© 2026 Nitesh Stylish Dresses • All Rights Reserved</footer>
+
+<script>
+function order(product){
+  const name = prompt("अपना नाम लिखें:");
+  if (!name) return;
+
+  const mobile = prompt("अपना मोबाइल नंबर लिखें:");
+  if (!mobile) return;
+
+  const address = prompt("अपना पूरा पता लिखें:");
+  if (!address) return;
+
+  const message =
+    "🛍️ NEW COD ORDER\n\n" +
+    "Product: " + product + "\n" +
+    "Customer Name: " + name + "\n" +
+    "Mobile: " + mobile + "\n" +
+    "Address: " + address + "\n" +
+    "Payment: Cash on Delivery";
+
+  window.open(
+    "https://wa.me/919006073254?text=" + encodeURIComponent(message),
+    "_blank"
+  );
+}
+</script>
+
+</body>
+</html>
